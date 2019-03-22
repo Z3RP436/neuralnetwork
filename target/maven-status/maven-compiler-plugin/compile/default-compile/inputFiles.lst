@@ -1,0 +1,13 @@
+C:\dev\GLA\neuralNetwork\src\main\java\application\App.java
+C:\dev\GLA\neuralNetwork\src\main\java\network\neuron\InputNeuron.java
+C:\dev\GLA\neuralNetwork\src\main\java\network\activationfunction\Sigmoid.java
+C:\dev\GLA\neuralNetwork\src\main\java\network\layers\AbstractLayer.java
+C:\dev\GLA\neuralNetwork\src\main\java\network\layers\InputLayer.java
+C:\dev\GLA\neuralNetwork\src\main\java\network\NeuralNetworkBuilder.java
+C:\dev\GLA\neuralNetwork\src\main\java\network\layers\HiddenLayer.java
+C:\dev\GLA\neuralNetwork\src\main\java\network\activationfunction\ActivationFunction.java
+C:\dev\GLA\neuralNetwork\src\main\java\utils\MatrixOperations.java
+C:\dev\GLA\neuralNetwork\src\main\java\network\layers\Connection.java
+C:\dev\GLA\neuralNetwork\src\main\java\network\layers\OutputLayer.java
+C:\dev\GLA\neuralNetwork\src\main\java\network\NeuralNetwork.java
+C:\dev\GLA\neuralNetwork\src\main\java\network\neuron\Neuron.java
