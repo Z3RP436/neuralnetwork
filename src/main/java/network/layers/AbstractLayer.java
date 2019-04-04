@@ -1,13 +1,15 @@
 package network.layers;
 
 import network.activationfunction.ActivationFunction;
+import network.activationfunction.FastSigmoid;
 import network.activationfunction.Sigmoid;
 import network.neuron.Neuron;
 
 import java.util.LinkedList;
 
 public class AbstractLayer {
-	private ActivationFunction activationFunction = new Sigmoid();
+	private AbstractLayer layerBefore;
+	private ActivationFunction activationFunction;
 	private Neuron[] neurons;
 	private double bias;
 
@@ -37,5 +39,13 @@ public class AbstractLayer {
 
 	public void setBias(double bias) {
 		this.bias = bias;
+	}
+
+	public AbstractLayer getLayerBefore() {
+		return layerBefore;
+	}
+
+	public void setLayerBefore(AbstractLayer layerBefore) {
+		this.layerBefore = layerBefore;
 	}
 }

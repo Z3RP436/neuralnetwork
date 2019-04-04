@@ -70,17 +70,19 @@ public class NeuralNetwork {
 	}
 
 	public double train(double[] targets, double learningRate) {
-		double[] newIToHWeights = hWeights(targets,learningRate);
 		double[] newHToOWeights = oWeights(targets,learningRate);
 
-		int iterator = 0;
-		for(Neuron hiddenNeuron: hiddenLayers[0].getNeurons()){
-			for(Connection connection: hiddenNeuron.getConnections()){
-				connection.setWeight(newIToHWeights[iterator]);
-				iterator++;
+		for(HiddenLayer hiddenLayer : hiddenLayers) {
+			double[] newIToHWeights = hWeights(targets,learningRate,hiddenLayer);
+			int iterator = 0;
+			for (Neuron hiddenNeuron : hiddenLayer.getNeurons()) {
+				for (Connection connection : hiddenNeuron.getConnections()) {
+					connection.setWeight(newIToHWeights[iterator]);
+					iterator++;
+				}
 			}
 		}
-		iterator = 0;
+		int iterator = 0;
 		for(Neuron outputNeuron: outputLayer.getNeurons()){
 			for(Connection connection: outputNeuron.getConnections()){
 				connection.setWeight(newHToOWeights[iterator]);
@@ -94,7 +96,7 @@ public class NeuralNetwork {
 
 	public double[] oWeights(double[] targets, double learningRate){
 		int iterator = 0;
-		double[] newWeights = new double[hiddenLayers[0].getNeurons().length * outputLayer.getNeurons().length];
+		double[] newWeights = new double[outputLayer.getLayerBefore().getNeurons().length * outputLayer.getNeurons().length];
 		double[] outNetO1 = new double[outputLayer.getNeurons().length];
 		double[] eOutputs = new double[outputLayer.getNeurons().length];
 		for(int i = 0; i < outputLayer.getNeurons().length;i++){
@@ -120,9 +122,9 @@ public class NeuralNetwork {
 		return newWeights;
 	}
 
-	public double[] hWeights(double[] targets, double learningRate){
+	public double[] hWeights(double[] targets, double learningRate, HiddenLayer hiddenLayer){
 		int iterator = 0;
-		double[] newWeights = new double[hiddenLayers[0].getNeurons().length * inputLayer.getNeurons().length];
+		double[] newWeights = new double[hiddenLayer.getNeurons().length * hiddenLayer.getLayerBefore().getNeurons().length];
 		double[] outNetO1 = new double[outputLayer.getNeurons().length];
 		double[] eOutputs = new double[outputLayer.getNeurons().length];
 		for(int i = 0; i < outputLayer.getNeurons().length;i++){
@@ -131,7 +133,6 @@ public class NeuralNetwork {
 			eOutputs[i] = -(targets[i] - outputNeuron.fire());
 		}
 
-		HiddenLayer hiddenLayer = hiddenLayers[0];
 		for(int j = 0; j< hiddenLayer.getNeurons().length;j++){
 			Neuron hNeuron = hiddenLayer.getNeurons()[j];
 			double eTotalOutHNeuron = 0;
@@ -150,7 +151,12 @@ public class NeuralNetwork {
 				Connection connection = hNeuron.getConnections()[i];
 
 				double weight = connection.getWeight();
-				double input = ((InputNeuron)connection.getNeuron()).getValue();
+				double input;
+				if(connection.getNeuron() instanceof InputNeuron){
+					input = ((InputNeuron)connection.getNeuron()).getValue();
+				}else {
+					input = connection.getNeuron().fire();
+				}
 				double outHNetH = outH * (1 - outH);
 				double eTotal = eTotalOutHNeuron * outHNetH * input;
 				double newW = weight - learningRate * eTotal;

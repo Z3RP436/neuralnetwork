@@ -2,6 +2,9 @@ package application;
 
 import network.NeuralNetwork;
 import network.NeuralNetworkBuilder;
+import network.activationfunction.FastSigmoid;
+import network.activationfunction.RyanSigmoid;
+import network.activationfunction.Sigmoid;
 import network.neuron.InputNeuron;
 import network.neuron.Neuron;
 
@@ -32,20 +35,22 @@ public class App {
 	}};
 
 	public static void main(String[] args) {
-		NeuralNetwork nn = NeuralNetworkBuilder.build().inputLayer(2).hiddenLayer(50).outputLayer(1).getNeuralNetwork();
+		NeuralNetwork nn = NeuralNetworkBuilder.build().inputLayer(2).hiddenLayer(50,new FastSigmoid()).hiddenLayer(50,new FastSigmoid()).hiddenLayer(50,new FastSigmoid()).outputLayer(2,new Sigmoid()).getNeuralNetwork();
 
 		long time = System.nanoTime();
-		for(int i = 0; i< 100000;i++) {
+		for(int i = 0; i< 1000;i++) {
 			((InputNeuron) nn.getInputLayer().getNeurons()[0]).setValue(1);
 			((InputNeuron) nn.getInputLayer().getNeurons()[1]).setValue(1);
-			nn.train(new double[] { 1 }, 0.5);
+			nn.train(new double[] { 0.9,0.1 }, 0.05);
+			System.out.printf("Loss: %s\n",(Math.abs(nn.getOutputLayer().getNeurons()[0].fire()-0.9) + Math.abs(nn.getOutputLayer().getNeurons()[1].fire() - 0.1)) / 2);
 		}
 		((InputNeuron) nn.getInputLayer().getNeurons()[0]).setValue(1);
 		((InputNeuron) nn.getInputLayer().getNeurons()[1]).setValue(1);
 		double fireValue = nn.getOutputLayer().getNeurons()[0].fire();
+		double fireValue2 = nn.getOutputLayer().getNeurons()[1].fire();
 
 		time = System.nanoTime() - time;
-		System.out.printf("Expected Value: %s\nReal Value: 1\nTrained: %sms\n",fireValue,time);
+		System.out.printf("Expected Value: %s,%s\nReal Value: 0.9,0.1\nTrained: %sms\n",fireValue,fireValue2,time);
 	}
 
 	private static void printStats(NeuralNetwork nn, int expected) {
