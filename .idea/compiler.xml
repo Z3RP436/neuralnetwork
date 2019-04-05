@@ -9,8 +9,5 @@
         <module name="neuralNetwork" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="snake" target="10" />
-    </bytecodeTargetLevel>
   </component>
 </project>

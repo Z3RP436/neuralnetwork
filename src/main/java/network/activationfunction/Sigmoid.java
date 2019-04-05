@@ -1,5 +1,7 @@
 package network.activationfunction;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 public class Sigmoid implements ActivationFunction{
 
 	@Override public double activate(double x) {

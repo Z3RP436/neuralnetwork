@@ -3,11 +3,12 @@ package network.neuron;
 import network.layers.AbstractLayer;
 import network.layers.Connection;
 
-import java.util.ConcurrentModificationException;
-import java.util.LinkedList;
+import javax.xml.bind.annotation.XmlTransient;
 
 public class Neuron {
+	@XmlTransient
 	private AbstractLayer layer;
+	@XmlTransient
 	private Connection[] connections;
 
 	public Neuron() {
@@ -41,6 +42,7 @@ public class Neuron {
 		this.connections = connections;
 	}
 
+	@XmlTransient
 	public AbstractLayer getLayer() {
 		return layer;
 	}
