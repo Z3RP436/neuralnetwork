@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ba5c8a1-1285-4d54-958c-7cd07e0a396a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/network/NeuralNetworkController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chart/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chart/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chart/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chart/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chart/chart.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chart/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chart/src/main/java/application/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chart/src/main/java/controller/ChartGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chart/src/main/java/controller/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chart/src/main/java/model/BasicChart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chart/src/main/java/model/LineChart.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../stanfordDogs/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../stanfordDogs/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../stanfordDogs/src/main/java/application/App.java" afterDir="false" />
@@ -12,24 +22,10 @@
       <change afterPath="$PROJECT_DIR$/../tictactoe/src/main/java/controller/GameController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../tictactoe/src/main/java/controller/PlayerController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../tictactoe/src/main/java/model/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ewarehouse-primefaces/ewarehouse-ejb/src/main/java/de/cargosoft/ewarehouse/service/SchedulesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ewarehouse-primefaces/ewarehouse-ejb/src/main/java/de/cargosoft/ewarehouse/service/SchedulesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/network/NeuralNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/network/NeuralNetwork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/network/NeuralNetworkBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/network/NeuralNetworkBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/network/activationfunction/Sigmoid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/network/activationfunction/Sigmoid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/network/layers/AbstractLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/network/layers/AbstractLayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/network/layers/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/network/layers/Connection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/network/layers/HiddenLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/network/layers/HiddenLayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/network/layers/InputLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/network/layers/InputLayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/network/layers/OutputLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/network/layers/OutputLayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/network/neuron/Neuron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/network/neuron/Neuron.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application/App$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/App$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application/App$CifarImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/App$CifarImage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/network/NeuralNetwork.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/network/NeuralNetwork.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/neuralNetwork-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/neuralNetwork-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,13 +60,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/application/App.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="35" column="75" selection-start-line="35" selection-start-column="75" selection-end-line="35" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="162">
+              <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -115,7 +108,6 @@
         <option value="$PROJECT_DIR$/snake/src/main/java/snake/Game.java" />
         <option value="$PROJECT_DIR$/snake/src/main/java/snake/Utils.java" />
         <option value="$PROJECT_DIR$/snake/src/main/java/application/App.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/network/activationfunction/ActivationFunction.java" />
         <option value="$PROJECT_DIR$/src/main/java/network/NeuralNetwork.java" />
         <option value="$PROJECT_DIR$/src/main/java/network/activationfunction/Sigmoid.java" />
@@ -130,6 +122,7 @@
         <option value="$PROJECT_DIR$/src/main/java/network/layers/AbstractLayer.java" />
         <option value="$PROJECT_DIR$/src/main/java/network/NeuralNetworkController.java" />
         <option value="$PROJECT_DIR$/src/main/java/application/App.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -161,7 +154,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -336,7 +329,7 @@
       <workItem from="1553771926094" duration="1211000" />
       <workItem from="1554115899926" duration="1275000" />
       <workItem from="1554278478056" duration="705000" />
-      <workItem from="1554376119037" duration="13064000" />
+      <workItem from="1554376119037" duration="15353000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1553236810492</created>
@@ -349,13 +342,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63422000" />
+    <option name="totallyTimeSpent" value="65711000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1066" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -364,8 +357,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37084672" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.35369775" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37084672" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35369775" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -708,13 +701,6 @@
         <state relative-caret-position="-357" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/network/activationfunction/Sigmoid.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -747,13 +733,6 @@
             <element signature="e#137#138#0" expanded="true" />
             <element signature="e#172#173#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/network/activationfunction/ActivationFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -835,6 +814,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/network/NeuralNetworkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="109" column="37" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/network/neuron/Neuron.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
@@ -846,23 +835,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/network/NeuralNetworkController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="109" column="37" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
+        <state relative-caret-position="-149">
+          <caret line="51" column="118" lean-forward="true" selection-start-line="51" selection-start-column="118" selection-end-line="51" selection-end-column="118" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/application/App.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/network/activationfunction/ActivationFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="35" column="75" selection-start-line="35" selection-start-column="75" selection-end-line="35" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
         </state>
       </provider>
     </entry>
